@@ -1,0 +1,67 @@
+🎸 Akinator: Soda Stereo (Adivina la Canción)
+🎤 Descripción del Proyecto
+Akinator: Soda Stereo es una implementación del popular juego Akinator, pero enfocado exclusivamente en la discografía de la banda argentina Soda Stereo.
+
+El programa guía al usuario a través de una serie de preguntas de Sí/No para intentar adivinar una canción en la que el usuario está pensando. Si el juego no logra adivinar, el jugador tiene la opción de enseñarle la nueva canción, guardándola en la base de datos para futuras partidas.
+
+Este juego está desarrollado en Python utilizando la librería Pygame para la interfaz gráfica.
+
+🌟 Características
+Adivinación por Preguntas: Utiliza un árbol de decisión simple para formular preguntas y reducir las opciones.
+
+Aprendizaje del Juego: Si el juego pierde, permite al usuario ingresar la canción y una nueva pregunta para ampliar su base de datos (mencionado en la función enseñar_cancion).
+
+Persistencia de Datos: La base de datos de canciones se guarda en un archivo data.json (mencionado en JSON_PATH).
+
+Interfaz Gráfica:
+
+Ventana de 900x600.
+
+Uso de colores temáticos (Dorado/Arena, Gris Oscuro).
+
+Implementación de imágenes para el fondo y el personaje (Akinator/Gustavo Cerati) si están disponibles (mencionado en IMAGEN_FONDO_JUEGO e IMAGEN_PERSONAJE).
+
+⚙️ Requisitos e Instalación
+Para ejecutar este juego, necesitas tener instalado Python 3.x y la librería Pygame.
+
+1. Requisitos
+Instala Pygame usando pip:
+
+Bash
+
+pip install pygame
+2. Archivos Necesarios
+Asegúrate de tener los siguientes archivos en el mismo directorio que main.py:
+
+main.py (el código fuente del juego).
+
+data.json (el archivo que contendrá la base de datos de preguntas y canciones).
+
+(Opcional) Archivos de imagen para el fondo y el personaje si deseas usar las variables globales RUTA_FONDO_JUEGO y RUTA_PERSONAJE definidas en el código.
+
+3. Ejecución del Juego
+Ejecuta el archivo principal:
+
+Bash
+
+python main.py
+🕹️ Cómo Jugar
+Inicio: Piensa en cualquier canción de Soda Stereo.
+
+Akinator Pregunta: El Akinator te hará preguntas de Sí/No sobre la canción.
+
+Responde: Haz clic en los botones de "Sí" o "No" para responder.
+
+Resultado:
+
+Si el Akinator adivina, ¡habrás ganado!
+
+Si el Akinator pierde, te preguntará si deseas enseñarle la nueva canción. Sigue las instrucciones en pantalla para ingresar el título y una nueva pregunta que lo ayude en el futuro.
+
+👨‍💻 Autor y Contribuciones
+Este proyecto fue desarrollado por:
+
+Valeria Michell Flores Mariscal 
+
+
+Cualquier contribución para mejorar la interfaz, optimizar el algoritmo de adivinación o ampliar la base de datos de preguntas y canciones es bienvenida.
